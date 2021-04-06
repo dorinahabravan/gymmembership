@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="panoAnchorPane" maxHeight="600.0" maxWidth="1000.0" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: C0C0C0; -fx-background-image: url('/com/habravanEnterprise/fitnessForLife/images/GymImageBackG.jpg');" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.habravanEnterprise.fitnessForLife.gui.startPage.FXMLStartPageSceneController">
+    <children>
+        <Label graphicTextGap="15.0" layoutX="31.0" layoutY="-38.0" prefHeight="166.0" prefWidth="596.0" text="You are now logged in to the :">
+            <font>
+                <Font name="Britannic Bold" size="34.0" />
+            </font>
+        </Label>
+        <Label fx:id="lLegaturaButoane" layoutX="630.0" layoutY="416.0" prefHeight="92.0" prefWidth="281.0" text="Would you like to continue as:" textFill="#305ec3">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnAdministrator" layoutX="600.0" layoutY="483.0" mnemonicParsing="false" onAction="#handleButtonOpenAdminLogIn" prefHeight="45.0" prefWidth="144.0" text="Administrator" />
+        <Button fx:id="btnGuest" layoutX="766.0" layoutY="482.0" mnemonicParsing="false" onAction="#handleButtonOpenGuestEnquiryForm" prefHeight="45.0" prefWidth="152.0" text="Guest" />
+    </children>
+</AnchorPane>
