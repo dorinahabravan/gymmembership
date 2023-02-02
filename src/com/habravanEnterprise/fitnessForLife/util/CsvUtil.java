@@ -45,13 +45,13 @@ public class CsvUtil {
 
         String[] words = line.split(CSV);
         int customerId = Integer.parseInt(words[0]);
-        int userID    = Integer.parseInt(words[0]);
-        String fullName = words[1];
-        String emailAddress = words[2];
-        LocalDate date = DataFormater.convertStringToLocaldate(words[3]);
+        int userID    = Integer.parseInt(words[1]);
+        String fullName = words[2];
+        String emailAddress = words[3];
+        LocalDate date = DataFormater.convertStringToLocaldate(words[4]);
         //int dateOfbirth = Integer.parseInt( words[3]);
-        String location = words[4];
-        int phoneNumber = Integer.parseInt(words[5]);
+        String location = words[5];
+        int phoneNumber = Integer.parseInt(words[6]);
 
         Client client;
         client = new Client( customerId,  userID,  fullName,  location,  phoneNumber, emailAddress, date);
